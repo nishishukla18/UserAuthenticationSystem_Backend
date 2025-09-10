@@ -1,16 +1,36 @@
 {
-  "name": "backend",
+  "name": "easy-auth-system",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "type":"module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon server.js"
+  "description": "Plug-and-play authentication with register, login, OTP-based reset, and welcome email.",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "authentication",
+    "auth",
+    "login",
+    "register",
+    "signup",
+    "reset-password",
+    "otp",
+    "email-verification",
+    "express",
+    "nodejs",
+    "mongodb",
+    "jwt"
+  ],
+  "author": "Nishi Shukla",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nishishukla18/UserAuthenticationSystem_Backend"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cookie-parser": "^1.4.7",
@@ -20,5 +40,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.18.0",
     "nodemailer": "^7.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
